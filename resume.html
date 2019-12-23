@@ -15,7 +15,7 @@
         <nav class="navbar">
             <a class="navbar-link" href="index.html">Home</a>
             <a class="navbar-link" href="bio.html">Bio</a>
-            <a class="navbar-link active" href="resume.html">Resume</a>
+            <a class="navbar-link active" href="resume.html">CV</a>
         </nav>
         <main>
             <div class="resume-section">
@@ -26,20 +26,20 @@
                         <span class="right">Medford, MA</span>
                     </div>
                     <div class="resume-section-item-description">
-                        Bachelor of Science, Major in Computer Science, Expected May 2020
+                        <span>Bachelor of Science, Major in Computer Science, Minor in Drama</span>
+                        <span class="right">September 2016 - May 2020 (Expected)</span>
                     </div>
                 </div>
             </div>
             <div class="resume-section">
-                <div class="resume-section-title">Skills</div>
-                <p>Programming Languages: C/C++, Java, Python, and LaTeX</p>
-                <p>Languages: Fluent in Portuguese and limited working proficiency in Spanish</p>
+                <div class="resume-section-title">Technical Skills</div>
+                <p>Software/Tools: Linux, git, vagrant</p>
+                <p>Programming Languages: C/C++, Javascript, HTML, Java, Python, SML</p>
+                <p>Frameworks: Laravel, Meteor</p>
             </div>
             <div class="resume-section">
-                <div class="resume-section-title">Relevant Courses & Projects</div>
-                <p>Introduction to Computer Science; Data Structures; Machine Structure & Programming; 
-                    Discrete Mathematics; Calculus III; Linear Algebra; Cyberlaw and Cyberpolicy; 
-                    Algorithms; Object Oriented Programming for Graphical User Interfaces</p>
+                <div class="resume-section-title">Relevant Courses</div>
+                <p>Data Structures; Machine Structure and Programming; Discrete Mathematics; Calculus III; Linear Algebra; Cyberlaw and Cyberpolicy; Algorithms; Object Oriented Programming for Graphical User Interfaces; Web Programming; Computation Theory; Programming Languages; Computer System Security; Database Systems</p>
                     <div class="resume-section-item">
                         <div class="resume-section-item-name">Universal Machine</div>
                         <ul>
@@ -58,6 +58,34 @@
                     </div>
             </div>
             <div class="resume-section">
+                <div class="resume-section-title">Major Course Projects</div>
+                    <div class="resume-section-item">
+                        <div class="resume-section-item-name">Universal Machine</div>
+                        <span>A Linux program that emulates a Universal Machine. The structure of the UM contained the following:</span>
+                        <ul>
+                            <li>8 general-purpose registers and an address space</li>
+                            <li>An I/O device to display ASCII characters and perform input/output operations</li>
+                            <li>A 32-bit program counter</li>
+                            <li>Infrastructure to recognize 14 instructions: Conditional Move, Segmented Load, Segmented Store, Addition, Multiplacation, Division, Bitwise NAND, Halt, Map Segment, Unmap Segment, Output, Input, Load Program, and Load Value</li>
+                        </ul>
+                    </div>
+                    <div class="resume-section-item">
+                        <div class="resume-section-item-name">Interpreter and Type Checker</div>
+                        <span>An interpreter and a static type checking system for Rube, a small object-oriented programming language modeled after Ruby, written using the SML programming language and which contained the following features:</span>
+                        <ul>
+                            <li>Three built-in classes: Object, String, Integer</li>
+                            <li>Every class has some superclass, which is Object by default</li>
+                            <li>Methods are inherited from superclasses and may be overriden but there is no overloading</li>
+                            <li>The conditional form if</li>
+                            <li>Sequencing of expressions</li>
+                            <li>Assignments to local variables and fields</li>
+                            <li>Object creation</li>
+                            <li>Method invocation</li>
+                            <li>Type annotations</li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="resume-section">
                 <div class="resume-section-title">Experience</div>
                 <div class="resume-section-item">
                     <div class="resume-section-item-name">
@@ -69,9 +97,13 @@
                         <span class="right">May 2017 - Present</span>
                     </div>
                     <ul>
-                        <li>Provide hands-on desktop support to over 150 employees in 9 departments</li>
-                        <li>Troubleshoot software/hardware issues and image Windows and macOS computers for new users</li>
-                        <li>Designed a program to split PDFs of transcripts merged together by the first letter of last names into individual transcripts with a unique naming convention</li>
+                        <li>Provide hands-on desktop support to 100+ employees in Academic Affairs, Career Services, Financial Services, Graduate Admissions, Student Accessibility Services, Student Affairs, Student Services, and Undergraduate Admissions</li>
+                        <li>Work on miscellaneous programming projects including:
+                            <ul>
+                                <li>a C++ program to separate transcripts that were merged together when Tufts University merged with the School of the Museum of Fine Arts</li>
+                                <li>TutorFinder, a React website for Tufts University undergraduate students to use to find tutors hired by the University</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <div class="resume-section-item">
@@ -80,14 +112,47 @@
                         <span class="right">Medford, MA</span>
                     </div>
                     <div class="resume-section-item-description">
-                        <span>Administrative Associate, Webmaster</span>
+                        <span>Administrative Associate</span>
                         <span class="right">June 2016 - Present</span>
                     </div>
                     <ul>
-                        <li>Review IRS 501(c)(3) regulations and other non-profit laws to maintain compliance</li>
-                        <li>Develop and maintain the company’s website and other online accounts, including an online student information system</li>
+                        <li>Review IRS 501(c)(3) regulations and Massachusetts non-profit laws to maintain compliance</li>
+                        <li>Develop and maintain the company's website and student information system
+                            <ul>
+                                <li>The student information system is built using the Laravel framework and connects to various external APIs for other software used by the organization</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
+                <div class="resume-section-item">
+                    <div class="resume-section-item-name">
+                        <span>Center for Arts at the Armory</span>
+                        <span class="right">Somerville, MA</span>
+                    </div>
+                    <div class="resume-section-item-description">
+                        <span>Volunteer</span>
+                        <span class="right">June 2019 - August 2019</span>
+                    </div>
+                    <ul>
+                        <li>Migrated a Wordpress website to a new web hosting platform</li>
+                        <li>Migrated DNS entries to a new service</li>
+                    </ul>
+                </div>
+
+                <div class="resume-section-item">
+                    <div class="resume-section-item-name">
+                        <span>Tufts University Human Interaction Lab</span>
+                        <span class="right">Medford, MA</span>
+                    </div>
+                    <div class="resume-section-item-description">
+                        <span>Summer Front-End Development Intern</span>
+                        <span class="right">June 2019 - August 2019</span>
+                    </div>
+                    <ul>
+                        <li>Worked on the full stack for a website built with Node.js, React, Typescript, Express, and MySQL</li>
+                    </ul>
+                </div>
+
                 <div class="resume-section-item">
                     <div class="resume-section-item-name">
                         <span>Tufts University - Allen Discovery Center</span>
@@ -95,10 +160,11 @@
                     </div>
                     <div class="resume-section-item-description">
                         <span>Undergraduate Research</span>
-                        <span class="right">June 2018 - December 2018</span>
+                        <span class="right">June 2018 - May 2019</span>
                     </div>
                     <ul>
-                        <li>Researched how different models of Echo State Networks can be used to model regeneration in certain organisms</li>
+                        <li>Used an Echo State Network, a neural network model from reservoir computing, as a model for the regenerative process in certain biological systems</li>
+                        <li>Programmed a custom implementation of the Echo State Network using the Python programming language</li>
                     </ul>
                 </div>
             </div>
@@ -114,7 +180,7 @@
                         <span class="right">June 2018 - Present</span>
                     </div>
                     <ul>
-                        <li>This group puts on their own productions but also serves as the umbrella group for many other theater and performance groups at Tufts. The group is entirely self-funded</li>
+                        <li>Manage an $8,000 budget allocated to various different productions and events</li>
                     </ul>
                 </div>
                 <div class="resume-section-item">
@@ -123,11 +189,52 @@
                         <span class="right">Medford, MA</span>
                     </div>
                     <div class="resume-section-item-description">
-                        <span>Sound Designer & Producer</span>
+                        <span>Board Member, Treasurer, Sound Designer, and Stage Manager</span>
                         <span class="right">February 2017 - Present</span>
                     </div>
                     <ul>
-                        <li>Coordinate the sound elements of a production. Publicize productions and manage the production’s budget</li>
+                        <li>Manage a $20,000 budget allocated to 4 theatrical productions and other events</li>
+                        <li>As a sound designer, coordinate all of the sound elements for a specific production</li>
+                        <li>As a stage manager, coordinate all logistics of rehearsals and performances of a specific production, including:
+                            <ul>
+                                <li>Scheduling and running rehearsals</li>
+                                <li>Maintaining communication with over 40 involved parties</li>
+                                <li>Overseeing performances</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume-section-item">
+                    <div class="resume-section-item-name">
+                        <span>Tufts University Orientation</span>
+                        <span class="right">Medford, MA</span>
+                    </div>
+                    <div class="resume-section-item-description">
+                        <span>Producer</span>
+                        <span class="right">Summer 2018, Summer 2019</span>
+                    </div>
+                    <ul>
+                        <li>Managed a $2,000 budget for the Torn Ticket II and Pen, Paint, and Pretzels orientation shows</li>
+                        <li>Handled all publicity and rights acquisitions for the shows</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-section">
+                <div class="resume-section-title">Leadership</div>
+                <div class="resume-section-item">
+                    <ul>
+                        <li>
+                            <span>Portuguese (Advanced C2, Native)</span>
+                            <span class="right resume-section-item-description">Native Language, Translation for Boston Food Pantry</span>
+                        </li>
+                        <li>
+                            <span>English (Advanced C2, Fluent)</span>
+                            <span class="right resume-section-item-description">Daily Academic and Social Use</span>
+                        </li>
+                        <li>
+                            <span>Spanish (Intermediate B1)</span>
+                            <span class="right resume-section-item-description">Studied in high school, Translation for Boston Food Pantry</span>
+                        </li>
                     </ul>
                 </div>
             </div>
